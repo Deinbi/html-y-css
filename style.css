@@ -1,6 +1,20 @@
 /*
-width + padding + border = actual width of an element
-height + padding + border = actual height of an element
+https://www.w3schools.com/css/css3_box-sizing.asp
+
+    width + padding + border = actual width of an element
+    height + padding + border = actual height of an element
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+
+https://fonts.google.com/
+
+https://www.figma.com/design/jq2IQ0hbVm8Df9u3c6MYp9/Portafolio---Curso-(Copy)?node-id=1-11&t=A5Uiw8NvnwmxKaWb-0
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-sizing_old
+
+
 */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -24,14 +38,24 @@ strong{
 .tituloDestaque {
     color: #0077b6;
 }
+
+/*
+Al definir el valor de la propiedad display de un elemento como flex, 
+creamos un contenedor flex, es decir, comenzamos a utilizar Flexbox. 
+A partir de este punto, todos los elementos dentro del contenedor se 
+llaman elementos hijos y mostrarán comportamientos estandarizados.
+*/
 .presentacion {
     display: flex;
     align-items:  center;
-    margin: 10%;
+    margin: 10% 15%;
     justify-content: space-between;
 }
 .presentacion_contenido{
     width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 .contenido_titulo{
     font-size: 36px;
@@ -46,6 +70,18 @@ strong{
     justify-content: space-between ;
 }
 .presentacion_botones{
+    
+    background-color: #22D4FD;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    /*
     font-size: 24px;
     font-family: "Montserrat", sans-serif;
     font-weight: 600 ;
@@ -57,9 +93,10 @@ strong{
     padding: right 53px; ;
     padding-top: 21.5px;
     padding-bottom: 21.5px;
-    */
+   *//*
     padding: 21.5px 0px;
     border-radius: 15px;
     text-decoration: none;
     color:black;
+     */
 }
