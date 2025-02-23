@@ -2,7 +2,7 @@
 width + padding + border = actual width of an element
 height + padding + border = actual height of an element
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*Configuracion general*/
 *{
@@ -23,9 +23,43 @@ strong{
 /*Configuracion de un nuevo tipo, que llamamos tituloDestaque*/
 .tituloDestaque {
     color: #0077b6;
-  }
+}
 .presentacion {
     display: flex;
     align-items:  center;
-
+    margin: 10%;
+    justify-content: space-between;
+}
+.presentacion_contenido{
+    width: 615px;
+}
+.contenido_titulo{
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+.presentacion_parrafo_1{
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+.presentacion_enlaces{
+    display: flex;
+    justify-content: space-between ;
+}
+.presentacion_botones{
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600 ;
+    width: 280px;
+    background-color: #22D4FD;
+    text-align: center;
+    /*
+    padding: left 53px; ;
+    padding: right 53px; ;
+    padding-top: 21.5px;
+    padding-bottom: 21.5px;
+    */
+    padding: 21.5px 0px;
+    border-radius: 15px;
+    text-decoration: none;
+    color:black;
 }
