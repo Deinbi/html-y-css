@@ -1,70 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+/* Importa las fuentes desde Google Fonts */
 
 * {
     padding: 0;
-    margin:0;
+    margin: 0;
+    /* Elimina el margen y el padding predeterminado de todos los elementos */
 }
 
-body{
+body {
     height: 100vh;
     box-sizing: border-box;
-    background-color: #000000;
-    color: #F6F6F6;
+    background-color: #000000; /* Color de fondo negro */
+    color: #F6F6F6; /* Color del texto en un tono claro */
 }
 
-
 .titulo-destaque {
-    color: #22D4FD; ;
+    color: #22D4FD; /* Color especial para destacar títulos */
 }
 
 .presentacion {
-    margin: 10% 15%;
+    margin: 10% 15%; /* Margen externo para centrar la sección */
+    display: flex; /* Usa flexbox para organizar los elementos internos */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    justify-content: space-between; /* Espacia los elementos horizontalmente */
+}
+
+.presentacion__contenido {
+    width: 615px; /* Ancho del contenido de la presentación */
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Acomoda los elementos en una columna */
+    gap: 40px; /* Espacio entre los elementos internos */
+}
+
+.presentacion__contenido__titulo {
+    font-size: 36px; /* Tamaño de fuente del título */
+    font-family: 'Krona One', sans-serif; /* Fuente personalizada */
+}
+
+.presentacion__contenido__texto {
+    font-size: 24px; /* Tamaño de fuente del texto de presentación */
+    font-family: 'Montserrat', sans-serif; /* Fuente personalizada */
+}
+
+.presentacion__enlaces {
+    display: flex;
+    flex-direction: column; /* Organiza los enlaces en una columna */
     justify-content: space-between;
-}
-
-.presentacion__contenido{
-    width: 615px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.presentacion__contenido__titulo{
-    font-size: 36px;
-    font-family: 'Krona One', sans-serif;
-}
-
-.presentacion__contenido__texto{
-    font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.presentacion__enlaces{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    gap: 32px
-}
-.presentacion__enlaces__subtitulos{
-    font-size: 24px;
-    font-family: 'Krona One', sans-serif;
-    font-weight:400;
+    gap: 32px; /* Espacio entre enlaces */
 }
 
-.presentacion__enlaces__link{
-    background-color: black;
-    width: 378px;
-    text-align: center;
-    border-radius: 8px;
+.presentacion__enlaces__subtitulos {
     font-size: 24px;
-    font-weight: 600;
-    padding: 21.5px 0;
-    text-decoration: none;
-    color:#F6F6F6;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400; /* Peso de la fuente para los subtítulos */
+}
+
+.presentacion__enlaces__link {
+    background-color: black; /* Fondo negro para los enlaces */
+    width: 378px; /* Ancho de los enlaces */
+    text-align: center; /* Alineación centrada del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 24px;
+    font-weight: 600; /* Fuente en negrita */
+    padding: 21.5px 0; /* Espaciado interno arriba y abajo */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #F6F6F6; /* Color del texto */
     font-family: 'Montserrat', sans-serif;
-    border: 2px solid #22D4FD;
+    border: 2px solid #22D4FD; /* Borde azul para los enlaces */
+    /* Alineación de los iconos con el texto dentro del enlace */
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre el icono y el texto */
+
+}
+/*
+Cuando se pasa el mouse sobre el boton, cambia de color
+y para ello se utiliza el hover
+*/
+
+.presentacion__enlaces__link:hover{
+    background-color: #272727; /* Color mas claro */
+    width: 378px; /* Ancho de los enlaces */
+    text-align: center; /* Alineación centrada del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 24px;
+    font-weight: 600; /* Fuente en negrita */
+    padding: 21.5px 0; /* Espaciado interno arriba y abajo */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #F6F6F6; /* Color del texto */
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #22D4FD; /* Borde azul para los enlaces */    
 }
