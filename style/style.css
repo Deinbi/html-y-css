@@ -13,6 +13,7 @@
 * {
     padding: 0;
     margin: 0;
+    text-decoration: none;
     /* Elimina el margen y el padding predeterminado de todos los elementos */
 }
 
@@ -32,24 +33,28 @@ body {
     display: flex; /* Usa flexbox para organizar los elementos internos */
     align-items: center; /* Alinea los elementos verticalmente al centro */
     justify-content: space-between; /* Espacia los elementos horizontalmente */
+    gap: 60px; /* Espacio entre los elementos internos */
+
 }
 
 .presentacion__contenido {
-    width: 615px; /* Ancho del contenido de la presentación */
+    width: 50%; /* Ancho del contenido de la presentación */
     display: flex;
     flex-direction: column; /* Acomoda los elementos en una columna */
-    gap: 30px; /* Espacio entre los elementos internos */
+    gap: 60px; /* Espacio entre los elementos internos */
 }
 
 /*1 rem = 16px*/
 .presentacion__contenido__titulo {
     font-size: 2.25rem; /* Tamaño de fuente del título */
     font-family: var(--fuente-krona); /* Fuente personalizada */
+    gap: 60px; /* Espacio entre los elementos internos */
 }
 
 .presentacion__contenido__texto {
     font-size: 1.5rem; /* Tamaño de fuente del texto de presentación */
     font-family: var(--fuente-monserrat); /* Fuente personalizada */
+    gap:60px; /* Espacio entre los elementos internos */
 }
 
 .presentacion__enlaces {
@@ -61,17 +66,18 @@ body {
 }
 
 .presentacion__enlaces__subtitulos {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-krona);
     font-weight: 400; /* Peso de la fuente para los subtítulos */
+    gap: 30px; /* Espacio entre los elementos internos */
 }
 
 .presentacion__enlaces__link {
     background-color: black; /* Fondo negro para los enlaces */
-    width: 378px; /* Ancho de los enlaces */
+    width: 50%; /* Ancho de los enlaces */
     text-align: center; /* Alineación centrada del texto */
     border-radius: 8px; /* Bordes redondeados */
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600; /* Fuente en negrita */
     padding: 21.5px 0; /* Espaciado interno arriba y abajo */
     text-decoration: none; /* Elimina el subrayado del enlace */
@@ -91,10 +97,10 @@ y para ello se utiliza el hover
 
 .presentacion__enlaces__link:hover{
     background-color: var(--color-hover); /* Color mas claro */
-    width: 378px; /* Ancho de los enlaces */
+    width: 50%; /* Ancho de los enlaces */
     text-align: center; /* Alineación centrada del texto */
     border-radius: 8px; /* Bordes redondeados */
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600; /* Fuente en negrita */
     padding: 21.5px 0; /* Espaciado interno arriba y abajo */
     text-decoration: none; /* Elimina el subrayado del enlace */
@@ -107,7 +113,7 @@ y para ello se utiliza el hover
     text-decoration: none; /* Elimina el subrayado del enlace */
     color: var(--color-primario); /* Color del texto */
     font-family:var(--fuente-monserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight:400;
     padding: 23.64px;
     text-align: center; /* Alineación centrada del texto */
@@ -124,10 +130,28 @@ y para ello se utiliza el hover
     gap:80px;
     color: var(--color-terciario); /* Color del texto */ 
     font-family:var(--fuente-monserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     
 }
 .menu__header__link{
     text-decoration: none;    
+}
+.presentacion__imagen{
+    width: 50%;
+    gap: 30px; /* Espacio entre los elementos internos */
+}
+
+@media (max-width : 1200px){
+    .presentacion{
+        flex-direction: column-reverse;   
+        padding: 5%; 
+    }
+    .menu__header{
+        padding: 10%;
+        justify-content: center;
+    }
+    .presentacion__contenido{
+        width: auto;
+    }
 }
