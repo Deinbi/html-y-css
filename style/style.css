@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
-
 /* Importa las fuentes desde Google Fonts */
+
+:root{
+    --color-primario:#000000;
+    --color-secundario: #f6f6f6;
+    --color-terciario: #22d4fd;
+    --color-hover:#272727;
+    --fuente-monserrat: 'monserrat', sans serif;
+    --fuente-krona:'Krona One', sans serif;  
+}
 
 * {
     padding: 0;
@@ -11,12 +19,12 @@
 body {
     /*height: 100vh;*/
     box-sizing: border-box;
-    background-color: #000000; /* Color de fondo negro */
-    color: #F6F6F6; /* Color del texto en un tono claro */
+    background-color: var(--color-primario); /* Color de fondo negro */
+    color: var(--color-secundario); /* Color del texto en un tono claro */
 }
 
 .titulo-destaque {
-    color: #22D4FD; /* Color especial para destacar títulos */
+    color: var(--color-terciario); /* Color especial para destacar títulos */
 }
 
 .presentacion {
@@ -35,12 +43,12 @@ body {
 
 .presentacion__contenido__titulo {
     font-size: 36px; /* Tamaño de fuente del título */
-    font-family: 'Krona One', sans-serif; /* Fuente personalizada */
+    font-family: var(--fuente-krona); /* Fuente personalizada */
 }
 
 .presentacion__contenido__texto {
     font-size: 24px; /* Tamaño de fuente del texto de presentación */
-    font-family: 'Montserrat', sans-serif; /* Fuente personalizada */
+    font-family: var(--fuente-monserrat); /* Fuente personalizada */
 }
 
 .presentacion__enlaces {
@@ -53,7 +61,7 @@ body {
 
 .presentacion__enlaces__subtitulos {
     font-size: 24px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fuente-krona);
     font-weight: 400; /* Peso de la fuente para los subtítulos */
 }
 
@@ -66,9 +74,9 @@ body {
     font-weight: 600; /* Fuente en negrita */
     padding: 21.5px 0; /* Espaciado interno arriba y abajo */
     text-decoration: none; /* Elimina el subrayado del enlace */
-    color: #F6F6F6; /* Color del texto */
-    font-family: 'Montserrat', sans-serif;
-    border: 2px solid #22D4FD; /* Borde azul para los enlaces */
+    color: var(--color-secundario); /* Color del texto */
+    font-family: var(--fuente-monserrat);
+    border: 2px solid var(--color-terciario); /* Borde azul para los enlaces */
     /* Alineación de los iconos con el texto dentro del enlace */
     display: flex;
     justify-content: center;
@@ -81,7 +89,7 @@ y para ello se utiliza el hover
 */
 
 .presentacion__enlaces__link:hover{
-    background-color: #272727; /* Color mas claro */
+    background-color: var(--color-hover); /* Color mas claro */
     width: 378px; /* Ancho de los enlaces */
     text-align: center; /* Alineación centrada del texto */
     border-radius: 8px; /* Bordes redondeados */
@@ -89,15 +97,15 @@ y para ello se utiliza el hover
     font-weight: 600; /* Fuente en negrita */
     padding: 21.5px 0; /* Espaciado interno arriba y abajo */
     text-decoration: none; /* Elimina el subrayado del enlace */
-    color: #F6F6F6; /* Color del texto */
-    font-family: 'Montserrat', sans-serif;
-    border: 2px solid #22D4FD; /* Borde azul para los enlaces */    
+    color: var(--color-secundario); /* Color del texto */
+    font-family: var(--fuente-monserrat);
+    border: 2px solid var(--color-terciario); /* Borde azul para los enlaces */    
 }
 .footer__parrafo{
-    background-color: #22D4FD;
+    background-color: var(--color-terciario);
     text-decoration: none; /* Elimina el subrayado del enlace */
-    color: #000000; /* Color del texto */
-    font-family: 'Montserrat', serif; ;
+    color: var(--color-primario); /* Color del texto */
+    font-family:var(--fuente-monserrat);
     font-size: 24px;
     font-weight:400;
     padding: 23.64px;
@@ -113,8 +121,8 @@ y para ello se utiliza el hover
     align-content: center;
     flex-wrap: nowrap;
     gap:80px;
-    color: #22D4FD; /* Color del texto */ 
-    font-family: 'Montserrat', sans-serif;
+    color: var(--color-terciario); /* Color del texto */ 
+    font-family:var(--fuente-monserrat);
     font-size: 24px;
     font-weight: 600;
     
