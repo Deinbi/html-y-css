@@ -20,7 +20,7 @@ body {
 }
 
 .presentacion {
-    margin: 5% 15%; /* Margen externo para centrar la sección */
+    padding: 6.5% 15%; /* Margen interno para centrar la sección */
     display: flex; /* Usa flexbox para organizar los elementos internos */
     align-items: center; /* Alinea los elementos verticalmente al centro */
     justify-content: space-between; /* Espacia los elementos horizontalmente */
@@ -30,7 +30,7 @@ body {
     width: 615px; /* Ancho del contenido de la presentación */
     display: flex;
     flex-direction: column; /* Acomoda los elementos en una columna */
-    gap: 40px; /* Espacio entre los elementos internos */
+    gap: 30px; /* Espacio entre los elementos internos */
 }
 
 .presentacion__contenido__titulo {
@@ -104,7 +104,8 @@ y para ello se utiliza el hover
     text-align: center; /* Alineación centrada del texto */
 }
 .menu__header{
-    margin: 2% 15%; /* Margen externo para centrar la sección */
+    text-decoration: none;
+    margin: 0% 15%; /* Margen externo para centrar la sección */
     display: flex; /* Usa flexbox para organizar los elementos internos */
     flex-direction: row;
     justify-content: flex-start;
@@ -113,6 +114,11 @@ y para ello se utiliza el hover
     flex-wrap: nowrap;
     gap:80px;
     color: #22D4FD; /* Color del texto */ 
-    font-family: 'Montserrat', serif; ;
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
+    font-weight: 600;
+    
+}
+.menu__header__link{
+    text-decoration: none;    
 }
